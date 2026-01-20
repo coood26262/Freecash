@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
           {/* Section Header */}
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
-              <Video className="w-6 h-6 text-purple-500" />
+              <Video className="w-6 h-6 text-green-500" />
               <h2 className="text-2xl font-bold text-white">Featured Videos</h2>
             </div>
             <div className="flex items-center gap-2">
@@ -260,8 +260,8 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Dance Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-purple-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-blue-900/20 to-purple-900/20 overflow-hidden">
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-blue-900/20 to-green-900/20 overflow-hidden">
                 {/* Mock TikTok Video Content */}
                 <img
                   src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eGxnY3c3NGw2emtmaXJpb20wbXNmbXk4bHE5MW8yOWhqbmg4c3pnYiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/s7bQ0q95KyKV13yq7Z/giphy.gif"
@@ -319,7 +319,7 @@ export const Hero: React.FC = () => {
                 <h3 className="text-lg font-bold text-white mb-3">New Moves & Vibes</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-purple-500">
+                  <div className="text-2xl font-bold text-green-500">
                     $1.80 <span className="text-sm text-slate-400">/ video</span>
                   </div>
                 </div>
@@ -333,7 +333,7 @@ export const Hero: React.FC = () => {
                       });
                     }
                   }}
-                  className="block w-full bg-purple-600 hover:bg-purple-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
                   Watch
                 </a>
