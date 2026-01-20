@@ -95,8 +95,8 @@ export const Hero: React.FC = () => {
           {/* Video Cards Horizontal Swipe */}
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 -mx-4">
             {/* ASMR Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-purple-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-pink-900/20 to-purple-900/20 overflow-hidden">
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-pink-900/20 to-green-900/20 overflow-hidden">
                 {/* Mock TikTok Video Content */}
                 <img
                   src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHh4aXN6Nms4eXpmZHQ4N2F3NWgwbnMwbGdjemY4ZDhrb3lybGs2eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FWaml2vOWzWlYdWhsn/giphy.gif"
@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
                 <h3 className="text-lg font-bold text-white mb-3">Satisfying ASMR</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-purple-500">
+                  <div className="text-2xl font-bold text-green-500">
                     $2.50 <span className="text-sm text-slate-400">/ video</span>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export const Hero: React.FC = () => {
                       });
                     }
                   }}
-                  className="block w-full bg-purple-600 hover:bg-purple-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
                   Watch
                 </a>
@@ -176,7 +176,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Trending Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-purple-500/30 transition-all group snap-start">
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
               <div className="relative aspect-[9/16] bg-gradient-to-br from-orange-900/20 to-red-900/20 overflow-hidden">
                 {/* Mock TikTok Video Content */}
                 <img
@@ -238,7 +238,7 @@ export const Hero: React.FC = () => {
                 <h3 className="text-lg font-bold text-white mb-3">Viral Dance Challenges</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-purple-500">
+                  <div className="text-2xl font-bold text-green-500">
                     $3.20 <span className="text-sm text-slate-400">/ video</span>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export const Hero: React.FC = () => {
                       });
                     }
                   }}
-                  className="block w-full bg-purple-600 hover:bg-purple-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
                   Watch
                 </a>
