@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
         <div className="max-w-6xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            Make <span className="text-purple-500">$332+</span> Daily
+            Make <span className="text-green-500">$332+</span> Daily
             <br />
             Watching TikToks
           </h1>
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-slate-400 mb-6 max-w-3xl mx-auto">
             Get paid for rating videos, testing apps & surveys. Watch <span className="font-semibold text-white">5 min</span> and earn up to{' '}
-            <span className="font-semibold text-purple-500">$20</span>.
+            <span className="font-semibold text-green-500">$20</span>.
           </p>
 
           {/* Star Rating */}
@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
                 });
               }
             }}
-            className="inline-block bg-purple-600 hover:bg-purple-700 text-black font-bold text-lg px-12 py-5 rounded-xl transition-all shadow-2xl shadow-purple-500/40 active:scale-95 transform duration-100 mb-12"
+            className="inline-block bg-green-600 hover:bg-green-700 text-black font-bold text-lg px-12 py-5 rounded-xl transition-all shadow-2xl shadow-green-500/40 active:scale-95 transform duration-100 mb-12"
           >
             START EARNING NOW
           </a>
@@ -63,13 +63,13 @@ export const Hero: React.FC = () => {
           {/* Stats Section */}
           <div className="flex flex-row items-center justify-center gap-6 sm:gap-12 mt-8">
             <div className="flex flex-col items-center">
-              <div className="text-xs text-purple-500 font-bold uppercase tracking-wide mb-1">TOTAL PAID</div>
+              <div className="text-xs text-green-500 font-bold uppercase tracking-wide mb-1">TOTAL PAID</div>
               <div className="text-2xl sm:text-3xl font-bold text-white">$88 Million</div>
               <div className="text-xs text-slate-500">to Users</div>
             </div>
             <div className="w-px h-12 bg-white/10"></div>
             <div className="flex flex-col items-center">
-              <div className="text-xs text-purple-500 font-bold uppercase tracking-wide mb-1">TRUSTED BY</div>
+              <div className="text-xs text-green-500 font-bold uppercase tracking-wide mb-1">TRUSTED BY</div>
               <div className="text-2xl sm:text-3xl font-bold text-white">17 Million</div>
               <div className="text-xs text-slate-500">Verified Users</div>
             </div>
