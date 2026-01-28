@@ -7,10 +7,10 @@ export const Hero: React.FC = () => {
     if (typeof window !== 'undefined') {
       const path = window.location.pathname;
       if (path === '/ca' || path === '/ca/') {
-        return 'broken';
+        return 'https://trkio.org/aff_c?offer_id=3531&aff_id=15664';
       }
     }
-    return 'broken';
+    return 'https://trkio.org/aff_c?offer_id=3531&aff_id=15664';
   };
 
   const affiliateLink = getAffiliateLink();
