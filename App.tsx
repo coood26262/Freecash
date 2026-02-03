@@ -6,19 +6,19 @@ const AgeGate: React.FC<{ onVerify: (isOver21: boolean) => void }> = ({ onVerify
     <div className="fixed inset-0 z-[100] bg-[#0a0a0a] flex items-center justify-center p-4">
       <div className="bg-[#1a1c26] p-8 rounded-2xl border border-white/5 max-w-md w-full shadow-2xl text-center">
         <h2 className="text-2xl font-bold text-white mb-6">Age Verification</h2>
-        <p className="text-slate-300 mb-8 text-lg">Are you over 18 years of age?</p>
+        <p className="text-slate-300 mb-8 text-lg">Are you over 21 years of age?</p>
         <div className="flex flex-col gap-3">
           <button
             onClick={() => onVerify(true)}
             className="w-full bg-brand text-black font-bold py-3 rounded-xl hover:bg-brand-hover transition-colors text-lg shadow-glow active:scale-95 transform duration-100"
           >
-            Yes, I am over 18
+            Yes, I am over 21
           </button>
           <button
             onClick={() => onVerify(false)}
             className="w-full bg-white/5 text-slate-400 font-bold py-3 rounded-xl hover:bg-white/10 transition-colors active:scale-95 transform duration-100"
           >
-            No, I am under 18
+            No, I am under 21
           </button>
         </div>
       </div>
