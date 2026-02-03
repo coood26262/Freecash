@@ -92,8 +92,6 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          <p className="text-slate-400 mb-6">Complete surveys to earn coins. You will be rewarded for each survey completed.</p>
-
           {/* Survey Cards Horizontal Swipe */}
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 -mx-4">
             {/* Netflix Card */}
@@ -163,7 +161,7 @@ export const Hero: React.FC = () => {
                   }}
                   className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
-                  Watch
+                  Start
                 </a>
               </div>
             </div>
@@ -235,7 +233,7 @@ export const Hero: React.FC = () => {
                   }}
                   className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
-                  Watch
+                  Start
                 </a>
               </div>
             </div>
@@ -307,7 +305,7 @@ export const Hero: React.FC = () => {
                   }}
                   className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
-                  Watch
+                  Start
                 </a>
               </div>
             </div>
