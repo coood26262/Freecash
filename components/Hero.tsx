@@ -96,151 +96,49 @@ export const Hero: React.FC = () => {
 
           {/* Survey Cards Horizontal Swipe */}
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 -mx-4">
-            {/* CPX Research Card */}
+            {/* Netflix Card */}
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-blue-900/20 to-purple-900/20 overflow-hidden">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-red-900/20 to-black/40 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
                 {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="10" />
-                    </svg>
-                    CPX RESEARCH
+                    <div className="w-3 h-3 bg-red-600 rounded-sm"></div>
+                    Netflix
                   </span>
                 </div>
 
                 {/* Popularity Badge */}
                 <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-blue-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                  <div className="bg-red-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
                     <span>Popularity</span>
-                    <span className="text-yellow-300">🔥 77</span>
+                    <span className="text-yellow-300">🔥 95</span>
                   </div>
                 </div>
 
-                {/* Survey Icon/Visual */}
+                {/* App Icon with Red Squiggly Border */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-blue-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  <div className="relative">
+                    {/* Red Squiggly Border SVG */}
+                    <svg className="absolute -inset-6 w-44 h-44" viewBox="0 0 200 200" style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}>
+                      <path 
+                        d="M100,30 Q140,35 150,70 Q155,100 145,130 Q130,155 100,160 Q70,155 55,130 Q45,100 50,70 Q60,35 100,30" 
+                        fill="none" 
+                        stroke="#ef4444" 
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                      />
                     </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">CPX Research</h3>
-                <div className="mb-4">
-                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-green-500">
-                    $2.50 <span className="text-sm text-slate-400">/Question</span>
-                  </div>
-                </div>
-                <a
-                  href={affiliateLink}
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).ttq) {
-                      (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - CPX Research Survey',
-                        content_category: 'Survey Card'
-                      });
-                    }
-                  }}
-                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
-                >
-                  Watch
-                </a>
-              </div>
-            </div>
-
-            {/* theoremreach Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-purple-900/20 to-pink-900/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                {/* Survey Provider Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                    </svg>
-                    theoremreach
-                  </span>
-                </div>
-
-                {/* Popularity Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-purple-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <span>Popularity</span>
-                    <span className="text-yellow-300">🔥 100</span>
-                  </div>
-                </div>
-
-                {/* Survey Icon/Visual */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">Dice Dreams</h3>
-                <div className="mb-4">
-                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-green-500">
-                    $30.20 <span className="text-sm text-slate-400">/Level</span>
-                  </div>
-                </div>
-                <a
-                  href={affiliateLink}
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).ttq) {
-                      (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - theoremreach Survey',
-                        content_category: 'Survey Card'
-                      });
-                    }
-                  }}
-                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
-                >
-                  Watch
-                </a>
-              </div>
-            </div>
-
-            {/* Revenue Wall Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-orange-900/20 to-yellow-900/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                {/* Survey Provider Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                    </svg>
-                    REVENUE WALL
-                  </span>
-                </div>
-
-                {/* Popularity Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-orange-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <span>Popularity</span>
-                    <span className="text-yellow-300">⚡ 26</span>
-                  </div>
-                </div>
-
-                {/* Survey Icon/Visual */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-orange-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    
+                    {/* Circle background with app icon */}
+                    <div className="w-28 h-28 bg-red-900/60 rounded-full flex items-center justify-center backdrop-blur-sm relative z-10 border border-red-500/20">
+                      <img 
+                        src="/netflix-icon.png" 
+                        alt="Netflix" 
+                        className="w-16 h-16 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,7 +148,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $10.00 <span className="text-sm text-slate-400">/Sign Up</span>
+                    $10.00 <span className="text-sm text-slate-400">/ Sign Up</span>
                   </div>
                 </div>
                 <a
@@ -258,7 +156,7 @@ export const Hero: React.FC = () => {
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).ttq) {
                       (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - Revenue Wall Survey',
+                        content_name: 'Watch - Netflix',
                         content_category: 'Survey Card'
                       });
                     }
@@ -278,9 +176,7 @@ export const Hero: React.FC = () => {
                 {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                    </svg>
+                    <div className="w-3 h-3 bg-cyan-500 rounded-sm"></div>
                     BitLabs
                   </span>
                 </div>
@@ -293,12 +189,28 @@ export const Hero: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Survey Icon/Visual */}
+                {/* App Icon with Red Squiggly Border */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-cyan-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  <div className="relative">
+                    {/* Red Squiggly Border SVG */}
+                    <svg className="absolute -inset-6 w-44 h-44" viewBox="0 0 200 200" style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}>
+                      <path 
+                        d="M100,30 Q135,40 150,75 Q160,105 140,135 Q120,160 100,165 Q75,160 60,135 Q40,105 50,75 Q65,40 100,30" 
+                        fill="none" 
+                        stroke="#ef4444" 
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                      />
                     </svg>
+                    
+                    {/* Circle background with app icon */}
+                    <div className="w-28 h-28 bg-cyan-900/60 rounded-full flex items-center justify-center backdrop-blur-sm relative z-10 border border-cyan-500/20">
+                      <img 
+                        src="/bitlabs-icon.png" 
+                        alt="BitLabs" 
+                        className="w-16 h-16 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -328,151 +240,49 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Freecash Surveys Card */}
+            {/* TikTok Card */}
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-green-900/20 to-emerald-900/20 overflow-hidden">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-gray-900/20 to-black/40 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
                 {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    Freecash Surveys
+                    <div className="w-3 h-3 bg-white rounded-sm"></div>
+                    TikTok
                   </span>
                 </div>
 
                 {/* Popularity Badge */}
                 <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-green-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                  <div className="bg-gray-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
                     <span>Popularity</span>
-                    <span className="text-yellow-300">✨ 5</span>
+                    <span className="text-yellow-300">💫 88</span>
                   </div>
                 </div>
 
-                {/* Survey Icon/Visual */}
+                {/* App Icon with Red Squiggly Border */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-green-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <div className="relative">
+                    {/* Red Squiggly Border SVG */}
+                    <svg className="absolute -inset-6 w-44 h-44" viewBox="0 0 200 200" style={{ transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}>
+                      <path 
+                        d="M100,25 Q145,30 155,70 Q165,110 150,140 Q125,165 100,168 Q65,165 50,140 Q35,110 45,70 Q55,30 100,25" 
+                        fill="none" 
+                        stroke="#ef4444" 
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                      />
                     </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">Freecash Surveys</h3>
-                <div className="mb-4">
-                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-green-500">
-                    $1.50 <span className="text-sm text-slate-400">/ question</span>
-                  </div>
-                </div>
-                <a
-                  href={affiliateLink}
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).ttq) {
-                      (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - Freecash Survey',
-                        content_category: 'Survey Card'
-                      });
-                    }
-                  }}
-                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
-                >
-                  Watch
-                </a>
-              </div>
-            </div>
-
-            {/* lootably research Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-red-900/20 to-pink-900/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                {/* Survey Provider Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
-                    </svg>
-                    lootably research
-                  </span>
-                </div>
-
-                {/* Popularity Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-red-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <span>Popularity</span>
-                    <span className="text-yellow-300">📊 8</span>
-                  </div>
-                </div>
-
-                {/* Survey Icon/Visual */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-red-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">lootably research</h3>
-                <div className="mb-4">
-                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-green-500">
-                    $1.90 <span className="text-sm text-slate-400">/ question</span>
-                  </div>
-                </div>
-                <a
-                  href={affiliateLink}
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).ttq) {
-                      (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - lootably research Survey',
-                        content_category: 'Survey Card'
-                      });
-                    }
-                  }}
-                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
-                >
-                  Watch
-                </a>
-              </div>
-            </div>
-
-            {/* Pollfish Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-rose-900/20 to-red-900/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                {/* Survey Provider Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                    </svg>
-                    Pollfish
-                  </span>
-                </div>
-
-                {/* Popularity Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-rose-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <span>Popularity</span>
-                    <span className="text-yellow-300">💬 5</span>
-                  </div>
-                </div>
-
-                {/* Survey Icon/Visual */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-rose-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                    </svg>
+                    
+                    {/* Circle background with app icon */}
+                    <div className="w-28 h-28 bg-gray-900/60 rounded-full flex items-center justify-center backdrop-blur-sm relative z-10 border border-gray-500/20">
+                      <img 
+                        src="/tiktok-icon.png" 
+                        alt="TikTok" 
+                        className="w-16 h-16 object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -482,7 +292,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $5.00 <span className="text-sm text-slate-400">/Sign Up</span>
+                    $15.50 <span className="text-sm text-slate-400">/ video</span>
                   </div>
                 </div>
                 <a
@@ -490,7 +300,7 @@ export const Hero: React.FC = () => {
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).ttq) {
                       (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - Pollfish Survey',
+                        content_name: 'Watch - TikTok',
                         content_category: 'Survey Card'
                       });
                     }
@@ -498,64 +308,6 @@ export const Hero: React.FC = () => {
                   className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
                   Watch
-                </a>
-              </div>
-            </div>
-
-            {/* inBrain.ai Card */}
-            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-indigo-900/20 to-violet-900/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                {/* Survey Provider Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-                    </svg>
-                    inBrain.ai
-                  </span>
-                </div>
-
-                {/* Popularity Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-indigo-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <span>Popularity</span>
-                    <span className="text-yellow-300">🧠 8</span>
-                  </div>
-                </div>
-
-                {/* Survey Icon/Visual */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-indigo-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                    <svg className="w-16 h-16 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">inBrain.ai</h3>
-                <div className="mb-4">
-                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
-                  <div className="text-2xl font-bold text-green-500">
-                    $2.10 <span className="text-sm text-slate-400">/ question</span>
-                  </div>
-                </div>
-                <a
-                  href={affiliateLink}
-                  onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).ttq) {
-                      (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - inBrain.ai Survey',
-                        content_category: 'Survey Card'
-                      });
-                    }
-                  }}
-                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
-                >
-                  Start
                 </a>
               </div>
             </div>
