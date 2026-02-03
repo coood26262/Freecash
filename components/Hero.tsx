@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <h2 className="text-2xl font-bold text-white">Surveys</h2>
+              <h2 className="text-2xl font-bold text-white">FEATURED SURVEYS</h2>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
