@@ -134,7 +134,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $2.50 <span className="text-sm text-slate-400">/ question</span>
+                    $2.50 <span className="text-sm text-slate-400">/Question</span>
                   </div>
                 </div>
                 <a
@@ -188,11 +188,11 @@ export const Hero: React.FC = () => {
               </div>
 
               <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">theoremreach</h3>
+                <h3 className="text-lg font-bold text-white mb-3">Dice Dreams</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $3.20 <span className="text-sm text-slate-400">/ question</span>
+                    $30.20 <span className="text-sm text-slate-400">/Level</span>
                   </div>
                 </div>
                 <a
@@ -555,7 +555,7 @@ export const Hero: React.FC = () => {
                   }}
                   className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
                 >
-                  Watch
+                  Start
                 </a>
               </div>
             </div>
