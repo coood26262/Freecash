@@ -148,7 +148,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $10.00 <span className="text-sm text-slate-400">/ Sign Up</span>
+                    $10.00 <span className="text-sm text-slate-400">/Sign Up</span>
                   </div>
                 </div>
                 <a
@@ -220,7 +220,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $2.20 <span className="text-sm text-slate-400">/ question</span>
+                    $2.20 <span className="text-sm text-slate-400">/Question</span>
                   </div>
                 </div>
                 <a
@@ -292,7 +292,7 @@ export const Hero: React.FC = () => {
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $15.50 <span className="text-sm text-slate-400">/ video</span>
+                    $5.00 <span className="text-sm text-slate-400">/Sign Up</span>
                   </div>
                 </div>
                 <a
