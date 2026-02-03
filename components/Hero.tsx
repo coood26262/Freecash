@@ -246,11 +246,11 @@ export const Hero: React.FC = () => {
               </div>
 
               <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">Revenue Wall</h3>
+                <h3 className="text-lg font-bold text-white mb-3">Netflix</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $1.80 <span className="text-sm text-slate-400">/ question</span>
+                    $10.00 <span className="text-sm text-slate-400">/Sign Up</span>
                   </div>
                 </div>
                 <a
