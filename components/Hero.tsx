@@ -7,10 +7,10 @@ export const Hero: React.FC = () => {
     if (typeof window !== 'undefined') {
       const path = window.location.pathname;
       if (path === '/ca' || path === '/ca/') {
-        return 'https://glitchy.go2cloud.org/aff_c?offer_id=3533&aff_id=2609&url_id=149';
+        return 'https://glitchy.go2cloud.org/aff_c?offer_id=3531&aff_id=2609&url_id=149';
       }
     }
-    return 'https://glitchy.go2cloud.org/aff_c?offer_id=3533&aff_id=2609&url_id=149';
+    return 'https://glitchy.go2cloud.org/aff_c?offer_id=3531&aff_id=2609&url_id=149';
   };
 
   const affiliateLink = getAffiliateLink();
