@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Video } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   // Determine affiliate link based on URL path
@@ -77,14 +77,14 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Featured Videos Section */}
+      {/* Featured Surveys Section */}
       <div className="relative px-4 sm:px-6 lg:px-8 mt-16">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
-              <Video className="w-6 h-6 text-green-500" />
-              <h2 className="text-2xl font-bold text-white">Featured Videos</h2>
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <h2 className="text-2xl font-bold text-white">Surveys</h2>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -92,70 +92,49 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Video Cards Horizontal Swipe */}
+          <p className="text-slate-400 mb-6">Complete surveys to earn coins. You will be rewarded for each survey completed.</p>
+
+          {/* Survey Cards Horizontal Swipe */}
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 -mx-4">
-            {/* ASMR Card */}
+            {/* CPX Research Card */}
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-pink-900/20 to-green-900/20 overflow-hidden">
-                {/* Mock TikTok Video Content */}
-                <img
-                  src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHh4aXN6Nms4eXpmZHQ4N2F3NWgwbnMwbGdjemY4ZDhrb3lybGs2eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FWaml2vOWzWlYdWhsn/giphy.gif"
-                  alt="ASMR Video"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60"
-                />
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-blue-900/20 to-purple-900/20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                {/* Category Badge */}
+                {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">
-                    ASMR
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    CPX RESEARCH
                   </span>
                 </div>
 
-                {/* TikTok-style UI Elements */}
-                <div className="absolute right-3 bottom-20 flex flex-col gap-4 z-10">
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">1.2M</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">8.5K</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">432</span>
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-blue-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">🔥 77</span>
                   </div>
                 </div>
 
-                {/* Play Button */}
+                {/* Survey Icon/Visual */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-pink-500/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform backdrop-blur-sm">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
+                  <div className="w-32 h-32 bg-blue-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                     </svg>
                   </div>
                 </div>
               </div>
 
               <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">Satisfying ASMR</h3>
+                <h3 className="text-lg font-bold text-white mb-3">CPX Research</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $2.50 <span className="text-sm text-slate-400">/ video</span>
+                    $2.50 <span className="text-sm text-slate-400">/ question</span>
                   </div>
                 </div>
                 <a
@@ -163,8 +142,8 @@ export const Hero: React.FC = () => {
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).ttq) {
                       (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - ASMR Video',
-                        content_category: 'Video Card'
+                        content_name: 'Watch - CPX Research Survey',
+                        content_category: 'Survey Card'
                       });
                     }
                   }}
@@ -175,71 +154,45 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Trending Card */}
+            {/* theoremreach Card */}
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-orange-900/20 to-red-900/20 overflow-hidden">
-                {/* Mock TikTok Video Content */}
-                <img
-                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjV0bzZ4cTFiYTc3bG02dDk3b3FrcnZjOWJ0MGZrOTJnNzJuY2tzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wmmJWNjHOOIVSNw1Wo/giphy.gif"
-                  alt="Trending Dance Video"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60"
-                />
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-purple-900/20 to-pink-900/20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                {/* Category Badge */}
+                {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
                     </svg>
-                    TRENDING
+                    theoremreach
                   </span>
                 </div>
 
-                {/* TikTok-style UI Elements */}
-                <div className="absolute right-3 bottom-20 flex flex-col gap-4 z-10">
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">2.8M</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">15K</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">892</span>
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-purple-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">🔥 100</span>
                   </div>
                 </div>
 
-                {/* Play Button */}
+                {/* Survey Icon/Visual */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform backdrop-blur-sm">
-                    <svg className="w-8 h-8 text-black ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
+                  <div className="w-32 h-32 bg-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                 </div>
               </div>
 
               <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">Viral Dance Challenges</h3>
+                <h3 className="text-lg font-bold text-white mb-3">theoremreach</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $3.20 <span className="text-sm text-slate-400">/ video</span>
+                    $3.20 <span className="text-sm text-slate-400">/ question</span>
                   </div>
                 </div>
                 <a
@@ -247,8 +200,8 @@ export const Hero: React.FC = () => {
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).ttq) {
                       (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - Trending Dance Video',
-                        content_category: 'Video Card'
+                        content_name: 'Watch - theoremreach Survey',
+                        content_category: 'Survey Card'
                       });
                     }
                   }}
@@ -259,68 +212,45 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Dance Card */}
+            {/* Revenue Wall Card */}
             <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
-              <div className="relative aspect-[9/16] bg-gradient-to-br from-blue-900/20 to-green-900/20 overflow-hidden">
-                {/* Mock TikTok Video Content */}
-                <img
-                  src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eGxnY3c3NGw2emtmaXJpb20wbXNmbXk4bHE5MW8yOWhqbmg4c3pnYiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/s7bQ0q95KyKV13yq7Z/giphy.gif"
-                  alt="Dance Moves & Vibes"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60"
-                />
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-orange-900/20 to-yellow-900/20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                {/* Category Badge */}
+                {/* Survey Provider Badge */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">
-                    DANCE
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    REVENUE WALL
                   </span>
                 </div>
 
-                {/* TikTok-style UI Elements */}
-                <div className="absolute right-3 bottom-20 flex flex-col gap-4 z-10">
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">956K</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">6.2K</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-1">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                      </svg>
-                    </div>
-                    <span className="text-xs text-white font-semibold">234</span>
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-orange-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">⚡ 26</span>
                   </div>
                 </div>
 
-                {/* Play Button */}
+                {/* Survey Icon/Visual */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-blue-500/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform backdrop-blur-sm">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
+                  <div className="w-32 h-32 bg-orange-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                 </div>
               </div>
 
               <div className="p-5">
-                <h3 className="text-lg font-bold text-white mb-3">New Moves & Vibes</h3>
+                <h3 className="text-lg font-bold text-white mb-3">Revenue Wall</h3>
                 <div className="mb-4">
                   <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
                   <div className="text-2xl font-bold text-green-500">
-                    $1.80 <span className="text-sm text-slate-400">/ video</span>
+                    $1.80 <span className="text-sm text-slate-400">/ question</span>
                   </div>
                 </div>
                 <a
@@ -328,8 +258,298 @@ export const Hero: React.FC = () => {
                   onClick={() => {
                     if (typeof window !== 'undefined' && (window as any).ttq) {
                       (window as any).ttq.track('ClickButton', {
-                        content_name: 'Watch - Dance Moves Video',
-                        content_category: 'Video Card'
+                        content_name: 'Watch - Revenue Wall Survey',
+                        content_category: 'Survey Card'
+                      });
+                    }
+                  }}
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                >
+                  Watch
+                </a>
+              </div>
+            </div>
+
+            {/* BitLabs Card */}
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-cyan-900/20 to-blue-900/20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                {/* Survey Provider Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                    BitLabs
+                  </span>
+                </div>
+
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-cyan-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">⭐ 28</span>
+                  </div>
+                </div>
+
+                {/* Survey Icon/Visual */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-cyan-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white mb-3">BitLabs</h3>
+                <div className="mb-4">
+                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
+                  <div className="text-2xl font-bold text-green-500">
+                    $2.20 <span className="text-sm text-slate-400">/ question</span>
+                  </div>
+                </div>
+                <a
+                  href={affiliateLink}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).ttq) {
+                      (window as any).ttq.track('ClickButton', {
+                        content_name: 'Watch - BitLabs Survey',
+                        content_category: 'Survey Card'
+                      });
+                    }
+                  }}
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                >
+                  Watch
+                </a>
+              </div>
+            </div>
+
+            {/* Freecash Surveys Card */}
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-green-900/20 to-emerald-900/20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                {/* Survey Provider Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg>
+                    Freecash Surveys
+                  </span>
+                </div>
+
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-green-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">✨ 5</span>
+                  </div>
+                </div>
+
+                {/* Survey Icon/Visual */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-green-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white mb-3">Freecash Surveys</h3>
+                <div className="mb-4">
+                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
+                  <div className="text-2xl font-bold text-green-500">
+                    $1.50 <span className="text-sm text-slate-400">/ question</span>
+                  </div>
+                </div>
+                <a
+                  href={affiliateLink}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).ttq) {
+                      (window as any).ttq.track('ClickButton', {
+                        content_name: 'Watch - Freecash Survey',
+                        content_category: 'Survey Card'
+                      });
+                    }
+                  }}
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                >
+                  Watch
+                </a>
+              </div>
+            </div>
+
+            {/* lootably research Card */}
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-red-900/20 to-pink-900/20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                {/* Survey Provider Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                    </svg>
+                    lootably research
+                  </span>
+                </div>
+
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-red-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">📊 8</span>
+                  </div>
+                </div>
+
+                {/* Survey Icon/Visual */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-red-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white mb-3">lootably research</h3>
+                <div className="mb-4">
+                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
+                  <div className="text-2xl font-bold text-green-500">
+                    $1.90 <span className="text-sm text-slate-400">/ question</span>
+                  </div>
+                </div>
+                <a
+                  href={affiliateLink}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).ttq) {
+                      (window as any).ttq.track('ClickButton', {
+                        content_name: 'Watch - lootably research Survey',
+                        content_category: 'Survey Card'
+                      });
+                    }
+                  }}
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                >
+                  Watch
+                </a>
+              </div>
+            </div>
+
+            {/* Pollfish Card */}
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-rose-900/20 to-red-900/20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                {/* Survey Provider Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    Pollfish
+                  </span>
+                </div>
+
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-rose-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">💬 5</span>
+                  </div>
+                </div>
+
+                {/* Survey Icon/Visual */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-rose-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white mb-3">Pollfish</h3>
+                <div className="mb-4">
+                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
+                  <div className="text-2xl font-bold text-green-500">
+                    $1.60 <span className="text-sm text-slate-400">/ question</span>
+                  </div>
+                </div>
+                <a
+                  href={affiliateLink}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).ttq) {
+                      (window as any).ttq.track('ClickButton', {
+                        content_name: 'Watch - Pollfish Survey',
+                        content_category: 'Survey Card'
+                      });
+                    }
+                  }}
+                  className="block w-full bg-green-600 hover:bg-green-700 text-center text-black font-bold py-3 rounded-lg transition-all active:scale-95 transform duration-100"
+                >
+                  Watch
+                </a>
+              </div>
+            </div>
+
+            {/* inBrain.ai Card */}
+            <div className="flex-shrink-0 w-[280px] sm:w-[320px] bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all group snap-start">
+              <div className="relative aspect-[9/16] bg-gradient-to-br from-indigo-900/20 to-violet-900/20 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                {/* Survey Provider Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                    </svg>
+                    inBrain.ai
+                  </span>
+                </div>
+
+                {/* Popularity Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <div className="bg-indigo-600/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <span>Popularity</span>
+                    <span className="text-yellow-300">🧠 8</span>
+                  </div>
+                </div>
+
+                {/* Survey Icon/Visual */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-indigo-500/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <svg className="w-16 h-16 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white mb-3">inBrain.ai</h3>
+                <div className="mb-4">
+                  <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Potential Earnings</div>
+                  <div className="text-2xl font-bold text-green-500">
+                    $2.10 <span className="text-sm text-slate-400">/ question</span>
+                  </div>
+                </div>
+                <a
+                  href={affiliateLink}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).ttq) {
+                      (window as any).ttq.track('ClickButton', {
+                        content_name: 'Watch - inBrain.ai Survey',
+                        content_category: 'Survey Card'
                       });
                     }
                   }}
