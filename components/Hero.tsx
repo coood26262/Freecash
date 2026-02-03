@@ -29,8 +29,8 @@ export const Hero: React.FC = () => {
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-slate-400 mb-6 max-w-3xl mx-auto">
-            Get paid for rating videos, testing apps & surveys. Watch <span className="font-semibold text-white">5 min</span> and earn up to{' '}
-            <span className="font-semibold text-green-500">$20</span>.
+            Get paid for rating videos, testing apps & surveys. <span className="font-semibold text-white"></span>Earn up to{' '}
+            <span className="font-semibold text-green-500">$20 per survey</span>.
           </p>
 
           {/* Star Rating */}
